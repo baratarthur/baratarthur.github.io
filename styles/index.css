@@ -1,0 +1,103 @@
+:root {
+  --color-primary: #808080; /* Um tom de cinza */
+  --color-secondary: #000000;
+  --color-accent: #800080; /* Um roxo padrão */
+  --color-accent-support: #39FF14; /* Um verde neon vibrante */
+  --color-text: #808080;
+  --color-text-accent: #fff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-text-accent);
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-text-accent);
+}
+
+/* body */
+
+main #info {
+    padding: 4rem 1rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+main #info .img-container {
+    display: flex;
+    justify-content: center;
+}
+
+main #info img {
+    height: 400px;
+    border-radius: 1rem;
+    box-shadow: -4px 4px .5rem var(--color-accent-support);
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+}
+
+footer .links {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+footer .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .links img {
+    height: 140px;
+    width: 140px;
+}
+
+footer .off-topics ul {
+   list-style: none; 
+}
+
+footer .off-topics ul li {
+   font-weight: 600;
+   font-size: 1.3rem;
+   margin-bottom: 1rem;
+   border-bottom: 2px solid var(--color-accent-support);
+}
+
+footer #rights {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
